@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbckgrnd"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+
+    <!--                 SIGNUP-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signuptitle"
+        android:text="Sign up"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="25dp"/>
+
+    <!--                  USERNAME-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/signuptitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <!--                   EMAIL-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:layout_below="@+id/username"
+        android:background="#30ffffff"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="20dp"/>
+
+    <!--                PASSWORD-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasword"
+        android:layout_below="@id/mail"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:padding="20dp"
+        android:inputType="textPassword" />
+
+    <!--          CONFIRM PASSWORD-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repasword"
+        android:layout_below="@+id/pasword"
+        android:background="#30ffffff"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:padding="20dp"
+        android:inputType="textPassword" />
+
+    <!--             REGISTER BTN-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/repasword"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/teal_200"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/haveacc"
+        android:layout_below="@+id/signupbtn"
+        android:text="Already have an account ?"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <!--          INFO/SOCIAL ICONS-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_above="@+id/socialicons"
+        android:text="or sign up with"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-19dp"
+        android:gravity="center">
+
+        <Button
+            android:text="Goodle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/google" />
+
+        <Button
+
+            android:text="Facebook"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/fb" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
